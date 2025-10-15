@@ -1,0 +1,46 @@
+@tailwind base;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.grid-h-50 {
+  grid-template-rows: 16rem;
+}
+
+.w-98{
+  width: 34rem
+}
+
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.custom-input {
+  @apply appearance-none rounded-md relative block w-full px-3 py-2 text-white bg-transparent  focus:bg-black border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm;
+  /* Override browser defaults on hover and focus */
+  @apply hover:bg-black focus:bg-black;
+}
+
+:root {
+  /* background-color: #1c1c1c; */
+  /* background-color: #f2f2f2; */
+  /* background-color: #fff; */
+  background-color: black;
+  /* background-color: #2c2c2c; */
+}
+a {
+  color: white;
+  text-decoration: none;
+}
